@@ -1,0 +1,23 @@
+.header {
+	display: flex;
+	background-color: #202020;
+	border: 0.1rem solid #00bf63;
+	height: 6.5rem;
+	&__logo {
+		width: 6.5rem;
+		height: 6.5rem;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&--img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	&--title {
+		background-color: blue;
+		margin: auto;
+	}
+}
