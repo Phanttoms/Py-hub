@@ -1,3 +1,9 @@
-.test {
-	background-color: green;
+.gallery {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+	width: 95%;
+	align-self: center;
+	margin: 3rem 0 3rem 0;
 }
