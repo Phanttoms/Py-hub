@@ -19,19 +19,19 @@ export const data = [
 		link: {
 			youtube: [
 				{
-					url: "",
+					url: "https://www.youtube.com/terracid",
 					image: youtubeImg,
 				},
 			],
 			twitch: [
 				{
-					url: "",
+					url: "https://www.twitch.tv/wankilstudio",
 					image: twitchImg,
 				},
 			],
 			twitter: [
 				{
-					url: "",
+					url: "https://x.com/WankilStudio",
 					image: twitterImg,
 				},
 			],
@@ -48,13 +48,13 @@ export const data = [
 		link: {
 			youtube: [
 				{
-					url: "",
+					url: "https://www.youtube.com/@RayjuLucifurus/featured",
 					image: youtubeImg,
 				},
 			],
 			dailymotion: [
 				{
-					url: "",
+					url: "https://www.dailymotion.com/Rayju",
 					image: dailymotionImg,
 				},
 			],
@@ -71,13 +71,13 @@ export const data = [
 		link: {
 			youtube: [
 				{
-					url: "",
+					url: "https://www.youtube.com/@ElJj/featured",
 					image: youtubeImg,
 				},
 			],
 			twitter: [
 				{
-					url: "",
+					url: "https://x.com/ElJj",
 					image: twitterImg,
 				},
 			],

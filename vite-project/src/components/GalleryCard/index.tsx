@@ -43,22 +43,22 @@ function GalleryCard({
 				<div className="galleryCard__content__link">
 					<div className="galleryCard__content__link--nav">
 						{link.youtube?.map((yt, index) => (
-							<a key={`youtube-${index}`} href={yt.url}>
+							<a key={`youtube-${index}`} href={yt.url} target="_blank">
 								<img src={yt.image} alt="YouTube" />
 							</a>
 						))}
 						{link.twitch?.map((tw, index) => (
-							<a key={`twitch-${index}`} href={tw.url}>
+							<a key={`twitch-${index}`} href={tw.url} target="_blank">
 								<img src={tw.image} alt="Twitch" />
 							</a>
 						))}
 						{link.twitter?.map((tw, index) => (
-							<a key={`twitter-${index}`} href={tw.url}>
+							<a key={`twitter-${index}`} href={tw.url} target="_blank">
 								<img src={tw.image} alt="Twitter" />
 							</a>
 						))}
 						{link.dailymotion?.map((dm, index) => (
-							<a key={`dailymotion-${index}`} href={dm.url}>
+							<a key={`dailymotion-${index}`} href={dm.url} target="_blank">
 								<img src={dm.image} alt="Dailymotion" />
 							</a>
 						))}
