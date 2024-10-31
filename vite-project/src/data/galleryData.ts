@@ -16,29 +16,28 @@ export const data = [
 		image: galleryImg1,
 		description:
 			"Maecenas ultricies turpis est, ut volutpat nisi vulputate sed. Nullam libero odio, pulvinar et justo et, ornare ultrices dolor. Donec a nulla nec nisi scelerisque aliquet. Fusce aliquet, nulla blandit feugiat accumsan, turpis leo ultricies orci, sit amet tincidunt dolor libero ac mi.",
-		link: [
-			{
-				youtube: [
-					{
-						url: "",
-						image: youtubeImg,
-					},
-				],
-				twitch: [
-					{
-						url: "",
-						image: twitchImg,
-					},
-				],
-				twitter: [
-					{
-						url: "",
-						image: twitterImg,
-					},
-				],
-			},
-		],
-		url: "test",
+		link: {
+			youtube: [
+				{
+					url: "",
+					image: youtubeImg,
+				},
+			],
+			twitch: [
+				{
+					url: "",
+					image: twitchImg,
+				},
+			],
+			twitter: [
+				{
+					url: "",
+					image: twitterImg,
+				},
+			],
+		},
+
+		url: "test wankil",
 	},
 	{
 		id: "2",
@@ -46,23 +45,22 @@ export const data = [
 		image: galleryImg2,
 		description:
 			"Vestibulum et risus et leo finibus pulvinar. Phasellus lobortis nisi id sagittis tempor. Etiam ut finibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sapien lorem.",
-		link: [
-			{
-				youtube: [
-					{
-						url: "",
-						image: youtubeImg,
-					},
-				],
-				dailymotion: [
-					{
-						url: "",
-						image: dailymotionImg,
-					},
-				],
-			},
-		],
-		url: "test",
+		link: {
+			youtube: [
+				{
+					url: "",
+					image: youtubeImg,
+				},
+			],
+			dailymotion: [
+				{
+					url: "",
+					image: dailymotionImg,
+				},
+			],
+		},
+
+		url: "test rayju",
 	},
 	{
 		id: "3",
@@ -70,22 +68,21 @@ export const data = [
 		image: galleryImg3,
 		description:
 			"Proin tincidunt eu velit sit amet dignissim. Morbi laoreet vulputate mollis. Nunc elementum sapien sed mi facilisis mollis. Morbi maximus ipsum metus, sit amet aliquet mi feugiat nec. Integer sit amet ex at nibh blandit molestie id id elit. Donec eleifend ornare elit nec sagittis.",
-		link: [
-			{
-				youtube: [
-					{
-						url: "",
-						image: youtubeImg,
-					},
-				],
-				twitter: [
-					{
-						url: "",
-						image: twitterImg,
-					},
-				],
-			},
-		],
-		url: "test",
+		link: {
+			youtube: [
+				{
+					url: "",
+					image: youtubeImg,
+				},
+			],
+			twitter: [
+				{
+					url: "",
+					image: twitterImg,
+				},
+			],
+		},
+
+		url: "test el jj",
 	},
 ];

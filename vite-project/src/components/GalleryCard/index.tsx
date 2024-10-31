@@ -1,18 +1,35 @@
 import "./_galleryCard.scss";
 
 interface GalleryCardProps {
+	key: string;
+	id: string;
 	src: string;
+	content: string;
+	title: string;
+	url: string;
+	link: {
+		youtube?: { url: string; image: string }[];
+		twitch?: { url: string; image: string }[];
+		twitter?: { url: string; image: string }[];
+		dailymotion?: { url: string; image: string }[];
+	};
 }
 
-function GalleryCard({ src }: GalleryCardProps) {
+function GalleryCard({
+	key,
+	id,
+	src,
+	content,
+	title,
+	url,
+	link,
+}: GalleryCardProps) {
 	return (
-		<div className="galleryCard">
+		<div className="galleryCard" id={id} key={key}>
 			<div className="galleryCard__preview">
 				<img className="galleryCard__preview--img" src={src} alt="Preview" />
 				<div className="galleryCard__preview__titlebox">
-					<h2 className="galleryCard__preview__titlebox--title">
-						Titreadaadadad
-					</h2>
+					<h2 className="galleryCard__preview__titlebox--title">{title}</h2>
 				</div>
 			</div>
 			<div className="galleryCard__content">
@@ -20,24 +37,37 @@ function GalleryCard({ src }: GalleryCardProps) {
 					<h3 className="galleryCard__content__description--title">
 						Description:
 					</h3>
-					<p className="galleryCard__content__description--text">
-						Maecenas ultricies turpis est, ut volutpat nisi vulputate sed.
-						Nullam libero odio, pulvinar et justo et, ornare ultrices dolor.
-						Donec a nulla nec nisi scelerisque aliquet. Fusce aliquet, nulla
-						blandit feugiat accumsan, turpis leo ultricies orci, sit amet
-						tincidunt dolor libero ac mi. Vestibulum et risus et leo finibus
-						pulvinar. Phasellus lobortis nisi id sagittis tempor. Etiam ut
-						finibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Proin vulputate sapien lorem. Proin tincidunt eu velit sit amet
-						dignissim. Morbi laoreet vulputate mollis. Nunc elementum sapien sed
-						mi facilisis mollis. Morbi maximus ipsum metus, sit amet aliquet mi
-						feugiat nec. Integer sit amet ex at nibh blandit molestie id id
-						elit. Donec eleifend ornare elit nec sagittis.
-					</p>
+					<p className="galleryCard__content__description--text">{content}</p>
 				</div>
 				<div className="galleryCard__content__link">
-					<div className="galleryCard__content__link--nav">Link</div>
-					<div className="galleryCard__content__link--watch">Go to</div>
+					<div className="galleryCard__content__link--nav">
+						{link.youtube?.map((yt, index) => (
+							<a key={`youtube-${index}`} href={yt.url}>
+								<img src={yt.image} alt="YouTube" />
+							</a>
+						))}
+						{link.twitch?.map((tw, index) => (
+							<a key={`twitch-${index}`} href={tw.url}>
+								<img src={tw.image} alt="Twitch" />
+							</a>
+						))}
+						{link.twitter?.map((tw, index) => (
+							<a key={`twitter-${index}`} href={tw.url}>
+								<img src={tw.image} alt="Twitter" />
+							</a>
+						))}
+						{link.dailymotion?.map((dm, index) => (
+							<a key={`dailymotion-${index}`} href={dm.url}>
+								<img src={dm.image} alt="Dailymotion" />
+							</a>
+						))}
+					</div>
+					<button
+						className="galleryCard__content__link--watch"
+						onClick={() => (window.location.href = url)}
+					>
+						Watch
+					</button>
 				</div>
 			</div>
 		</div>

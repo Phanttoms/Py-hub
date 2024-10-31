@@ -1,15 +1,40 @@
-import GalleryCard from "../GalleryCard";
+// style
 import "./_gallery.scss";
-import img1 from "../../assets/images/testimage/chien1.webp";
-import img2 from "../../assets/images/testimage/chien2.webp";
-import img3 from "../../assets/images/testimage/chien3.jpg";
+
+// components
+import GalleryCard from "../GalleryCard";
+
+// information des chaines
+import { data } from "../../data/galleryData";
+
+interface Info {
+	id: string;
+	title: string;
+	image: string;
+	description: string;
+	url: string;
+	link: {
+		youtube?: { url: string; image: string }[];
+		twitch?: { url: string; image: string }[];
+		twitter?: { url: string; image: string }[];
+		dailymotion?: { url: string; image: string }[];
+	};
+}
 
 function Gallery() {
 	return (
 		<div className="gallery">
-			<GalleryCard src={img1} />
-			<GalleryCard src={img2} />
-			<GalleryCard src={img3} />
+			{data.map((info: Info) => (
+				<GalleryCard
+					key={info.id}
+					id={info.id}
+					src={info.image}
+					content={info.description}
+					title={info.title}
+					url={info.url}
+					link={info.link}
+				/>
+			))}
 		</div>
 	);
 }
