@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import "./_galleryCard.scss";
 
 interface GalleryCardProps {
-	key: string;
 	id: string;
 	src: string;
 	content: string;
@@ -16,17 +15,9 @@ interface GalleryCardProps {
 	};
 }
 
-function GalleryCard({
-	key,
-	id,
-	src,
-	content,
-	title,
-	url,
-	link,
-}: GalleryCardProps) {
+function GalleryCard({ id, src, content, title, url, link }: GalleryCardProps) {
 	return (
-		<div className="galleryCard" id={id} key={key}>
+		<div className="galleryCard" id={id}>
 			<div className="galleryCard__preview">
 				<img className="galleryCard__preview--img" src={src} alt="Preview" />
 				<div className="galleryCard__preview__titlebox">
