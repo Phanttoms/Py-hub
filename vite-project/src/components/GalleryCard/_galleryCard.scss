@@ -41,7 +41,7 @@
 		}
 	}
 	&__content {
-		width: 70%;
+		width: 90%;
 		height: auto;
 		display: flex;
 		flex-direction: column;
@@ -54,10 +54,6 @@
 			overflow: auto;
 			color: white;
 			gap: 1rem;
-			&--title {
-			}
-			&--text {
-			}
 		}
 		&__link {
 			display: flex;
@@ -73,6 +69,13 @@
 				flex-wrap: wrap;
 			}
 			&--watch {
+				background-color: #00bf63;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				padding: 1rem;
+				border-radius: 20%;
 			}
 		}
 	}

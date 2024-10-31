@@ -21,4 +21,20 @@
 		background-color: blue;
 		margin: auto;
 	}
+	&__navbar {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 10rem;
+		height: 6.5rem;
+		position: absolute;
+		right: 0;
+		&--link {
+			background-color: #00bf63;
+			padding: 1rem;
+			border-radius: 12%;
+			color: #202020;
+		}
+	}
 }

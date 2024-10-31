@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./_galleryCard.scss";
 
 interface GalleryCardProps {
@@ -62,12 +63,9 @@ function GalleryCard({
 							</a>
 						))}
 					</div>
-					<button
-						className="galleryCard__content__link--watch"
-						onClick={() => (window.location.href = url)}
-					>
+					<NavLink className="galleryCard__content__link--watch" to={url}>
 						Watch
-					</button>
+					</NavLink>
 				</div>
 			</div>
 		</div>
