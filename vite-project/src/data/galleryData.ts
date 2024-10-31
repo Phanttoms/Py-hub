@@ -37,7 +37,7 @@ export const data = [
 			],
 		},
 
-		url: "test wankil",
+		url: "/wankil-studio",
 	},
 	{
 		id: "2",
@@ -60,7 +60,7 @@ export const data = [
 			],
 		},
 
-		url: "test rayju",
+		url: "/rayju",
 	},
 	{
 		id: "3",
@@ -83,6 +83,6 @@ export const data = [
 			],
 		},
 
-		url: "test el jj",
+		url: "/eljj",
 	},
 ];
