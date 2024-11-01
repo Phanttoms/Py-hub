@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+
+// style
 import "./_galleryCard.scss";
 
 interface GalleryCardProps {

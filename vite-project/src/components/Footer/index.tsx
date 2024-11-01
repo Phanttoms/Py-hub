@@ -1,4 +1,7 @@
+// style
 import "./_footer.scss";
+
+// components
 import gitHubLogo from "../../assets/images/logos/logoGitHubWhite.png";
 
 function Footer() {

@@ -1,0 +1,42 @@
+.catalogue {
+	display: flex;
+	flex-direction: column;
+	&__banner {
+		display: flex;
+		flex-direction: column;
+		background-color: red;
+		position: relative;
+		&--img {
+			width: 100%;
+			height: 15rem;
+		}
+		&--title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+		}
+	}
+	&__content {
+		&__categorie {
+			display: flex;
+			flex-direction: column;
+			ul {
+				display: flex;
+				flex-direction: row;
+				gap: 2rem;
+				list-style-type: none;
+			}
+		}
+		&__gallery {
+			&__playlist {
+				&__titlebox {
+					&--title {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
