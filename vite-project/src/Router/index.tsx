@@ -1,4 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+// pages
 import Home from "../pages/Home";
 import Wankil from "../pages/WankilStudio";
 import Rayju from "../pages/RayjuLucifurus";
